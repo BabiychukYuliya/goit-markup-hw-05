@@ -27,7 +27,7 @@
         <nav class="main-nav">
           <ul class="list-nav">
             <li class="nav-item"
-              ><a class="link current header-nav" href="./index.html">Студія</a></li
+              ><a class="link current current-item header-nav" href="./index.html">Студія</a></li
             >
             <li class="nav-item"
               ><a class="link header-nav" href="./portfolio.html">Портфоліо</a></li
@@ -65,18 +65,17 @@
         </div>
       </section>
 
-          <!--Модальне вікно-->
+      <!--Модальне вікно-->
 
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button class="modal-btn" type="button" data-modal-close>
-                <svg width="30" height="30">
-                  <use href=""></use>
-                </svg>
-              </button>
-
-            </div>
-          </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-btn" type="button" data-modal-close>
+            <svg width="30" height="30">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
       <!--Наші кредо (h2 потрібно сховати в СSS)-->
       <section class="section section-credo">
         <div class="container">
@@ -128,16 +127,35 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list">
             <li>
-              <img
-                src="./images/notebook.jpg"
-                alt="Ноутбук та написання коду за алгоритмом, який намальований на папері"
-                width="370"
-              />
+              <div class="item-work">
+                <img
+                  src="./images/notebook.jpg"
+                  alt="Ноутбук та написання коду за алгоритмом, який намальований на папері"
+                  width="370"
+                />
+                <div class="descr-work">
+                  <p class="text-work">Десктопні додатки</p>
+                </div>
+              </div>
             </li>
+
             <li>
-              <img src="./images/phone.jpg" alt="Мобільні додатки" width="370" />
+              <div class="item-work">
+                <img src="./images/phone.jpg" alt="Мобільні додатки" width="370" />
+                <div class="descr-work">
+                  <p class="text-work">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
-            <li><img src="./images/tablet.jpg" alt="Планшет" width="370" /></li>
+
+            <li>
+              <div class="item-work">
+                <img src="./images/tablet.jpg" alt="Планшет" width="370" />
+                <div class="descr-work">
+                  <p class="text-work">Дизайнерські рішення</p>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
